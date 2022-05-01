@@ -839,9 +839,9 @@ class Game
                      Scoreboard::remove($player);
                      Scoreboard::new($player, 'bedwars', TextFormat::BOLD . TextFormat::YELLOW . "Bed Wars");
                      Scoreboard::setLine($player, 1, " ");
-                     Scoreboard::setLine($player, 2, "Winner team: " . TextFormat::GREEN . $this->winnerTeam->getName());
+                     Scoreboard::setLine($player, 2, "Winner: " . TextFormat::GREEN . $this->winnerTeam->getName());
                      Scoreboard::setLine($player, 3, "  ");
-                     Scoreboard::setLine($player, 4, "Thanks for playing!");
+                     Scoreboard::setLine($player, 4, "Game Over!");
                      Scoreboard::setLine($player, 5, "   ");
                      Scoreboard::setLine($player, 6, "Restart in " . TextFormat::GREEN . $this->rebootTime);
                      Scoreboard::setLine($player, 7, "    ");
